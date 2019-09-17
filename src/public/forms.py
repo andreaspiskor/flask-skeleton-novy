@@ -44,7 +44,6 @@ class secti(Form):
 class masoform(Form):
     typ=SelectField('Typ', choices=[(1, "Hovezi"), (2, "Veprove")], default=2)
 
-<<<<<<< HEAD
 class vstupnitestform(Form):
 
     Jmeno = TextField('Jmeno testujiciho:', validators=[
@@ -62,5 +61,3 @@ class vstupnitestform(Form):
         InputRequired(message="You can't leave this empty")
     ])
 
-=======
->>>>>>> 606513321c778cad6673cb4a3c511feefdc6bbc8
