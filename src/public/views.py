@@ -54,5 +54,6 @@ def vstupnitest():
             db.session.add(i)
             db.session.commit()
             flash("Vysledek ulozen", category="Error")
-            return str(vysledek)
+        dotaz = db.session.query(Vysledky.username, Vysledky.hodnoceni).all()
+        return render_template('public/vysledekvystup.tmpl',data=dotaz)
     return render_template('public/vstupnitest.tmpl', form=form)
